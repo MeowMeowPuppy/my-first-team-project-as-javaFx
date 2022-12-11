@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="createGroup.CreateGroupController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="78.0" prefWidth="400.0" spacing="30.0">
+         <children>
+            <Label text="모임이름">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="groupName" style="-fx-background-radius: 30;" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="10.0" right="10.0" top="15.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="400.0" spacing="30.0">
+         <children>
+            <Label text="모집인원">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="groupMember" style="-fx-background-radius: 30;" />
+            <ComboBox fx:id="category" prefHeight="23.0" prefWidth="124.0" promptText="카테고리 선택" style="-fx-background-color: skyblue; -fx-background-radius: 30;" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="341.0" prefWidth="400.0" spacing="25.0">
+         <children>
+            <Label text="상세내용 ">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextArea fx:id="content" prefHeight="341.0" prefWidth="292.0" />
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="88.0" prefWidth="400.0" spacing="50.0">
+         <children>
+            <Button fx:id="create" maxHeight="50.0" maxWidth="100.0" mnemonicParsing="false" onAction="#createProc" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: skyblue; -fx-background-radius: 30;" text="생성" />
+            <Button fx:id="cancel" maxHeight="50.0" maxWidth="100.0" mnemonicParsing="false" onAction="#cancellProc" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: skyblue; -fx-background-radius: 30;" text="취소" />
+         </children>
+      </HBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</VBox>

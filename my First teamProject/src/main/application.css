@@ -1,0 +1,76 @@
+.label{
+	-fx-font-family:"a오동통OL";
+}
+.TextField{
+	-fx-font-family:"a오동통OL";
+}
+.TextArea{
+	-fx-font-family:"a오동통OL";
+}
+.combo-box {
+		-fx-font-family:"a두리둥실";
+}
+
+.combo-box-popup .list-view .list-cell{
+	-fx-font-family:"a두리둥실";
+	-fx-font-size:16.0;
+}
+
+.button{
+	-fx-font-family:"a두리둥실";
+}
+
+.radio-button {
+		-fx-font-family:"a오동통OL";
+}
+
+.table-view .column-header-background{
+	-fx-background-color:skyblue;
+   -fx-padding:0.0 0.0 0.0 0.0;
+   -fx-border-radius:30.0;
+    -fx-background-radius:30.0;
+   }
+ 
+.table-view .column-header, .table-view.filler{
+   -fx-size:40.0;
+   -fx-border-width: 0.0 0.0 0.0 0.0;
+   -fx-background-color:transparent;
+   -fx-background-radius:30.0;
+}
+
+.table-view{
+	-fx-border-color:white;
+	-fx-background-radius:30.0;
+}
+
+
+
+#CreateTable .table-row-cell{
+	-fx-background-radius:30.0;
+	-fx-background-color:pink;
+}
+
+#JoinTable .table-row-cell{
+	-fx-background-radius:30.0;
+	-fx-background-color:#D1B2FF;
+}
+#searchTableView .table-row-cell{
+	-fx-background-radius:30.0;
+	-fx-background-color:#FFFFC5;
+}
+
+#tableView1 .table-row-cell{
+	-fx-background-radius:30.0;
+	-fx-background-color:#E0FF8B;
+}
+#tableView2 .table-row-cell{
+	-fx-background-radius:30.0;
+	-fx-background-color:#FFD6FF;
+}
+
+
+.table-view .text{
+	
+		-fx-font-family:"a두리둥실";
+			-fx-font-size:16;
+}

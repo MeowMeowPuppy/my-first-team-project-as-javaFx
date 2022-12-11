@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #C7FFE3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myGroup.MyGroupController">
+   <children>
+      <Label text="내가 생성한 모임">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <padding>
+            <Insets bottom="15.0" top="15.0" />
+         </padding>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="22.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Label text="No.">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="number" prefHeight="23.0" prefWidth="56.0" style="-fx-background-radius: 30;" />
+            <Label text="작성자 : ">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="id" editable="false" prefHeight="23.0" prefWidth="216.0" style="-fx-background-radius: 30;" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="22.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Label text="카테고리 : ">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="category" alignment="TOP_LEFT" editable="false" prefHeight="23.0" prefWidth="120.0" style="-fx-background-radius: 30;" />
+         </children>
+      </HBox>
+      <VBox prefHeight="385.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Label text="모임 제목 : ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="name" editable="false" maxWidth="380.0" prefHeight="23.0" prefWidth="250.0" style="-fx-background-radius: 30;">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="상세 내용 :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea fx:id="content" editable="false" maxWidth="380.0" prefHeight="400.0" prefWidth="380.0" wrapText="true">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </TextArea>
+            <Label text="참여자 아이디 :">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="memberId" maxWidth="380.0" prefHeight="200.0" prefWidth="380.0">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Label text="현재인원 : ">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="current" editable="false" prefHeight="23.0" prefWidth="60.0" style="-fx-background-radius: 30;" />
+            <Label text=" / 모집인원 : ">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="group" editable="false" prefHeight="32.0" prefWidth="60.0" style="-fx-background-radius: 30;">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </TextField>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="52.0" prefWidth="400.0" spacing="30.0">
+         <children>
+            <Label fx:id="changebutton" onMouseClicked="#changeProc" text="수정">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="deletebutton" onMouseClicked="#deleteProc" text="삭제">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="nobutton" onMouseClicked="#backProc" text="뒤로가기">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>

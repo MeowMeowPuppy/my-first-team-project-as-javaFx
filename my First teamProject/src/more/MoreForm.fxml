@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="more.MoreController">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: white;">
+         <top>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="100.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/DAMO__3_-removebg-preview%20(1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="30.0" />
+               </BorderPane.margin></FlowPane>
+         </top>
+         <center>
+            <VBox alignment="CENTER" prefHeight="300.0" prefWidth="400.0" spacing="40.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label onMouseClicked="#breakAway" text="회원 탈퇴">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label onMouseClicked="#changePw" text="비밀번호 변경">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label onMouseClicked="#logout" text="로그아웃">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label onMouseClicked="#openReport" text="신고">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" maxHeight="100.0" maxWidth="400.0" minHeight="100.0" minWidth="400.0" prefHeight="100.0" prefWidth="400.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label onMouseClicked="#openMain" text="홈">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label onMouseClicked="#openSearch" text="검색">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label onMouseClicked="#openMyGroupList" text="내 모임">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label onMouseClicked="#openMore" text="더보기">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

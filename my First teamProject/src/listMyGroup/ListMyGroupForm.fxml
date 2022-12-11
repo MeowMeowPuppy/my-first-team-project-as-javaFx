@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="listMyGroup.ListMyGroupController">
+   <children>
+      <Label text="내가 생성한 모임">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" left="10.0" />
+         </VBox.margin>
+      </Label>
+      <TableView fx:id="CreateTable" maxWidth="380.0" onMouseClicked="#CreateListCliked" prefHeight="190.0">
+        <columns>
+          <TableColumn fx:id="groupNum" maxWidth="50.0" prefWidth="50.0" text="번호" />
+          <TableColumn fx:id="groupName" maxWidth="140.0" prefWidth="140.0" text="모임 제목" />
+            <TableColumn fx:id="leaderId" maxWidth="650.0" minWidth="0.0" prefWidth="65.0" text="작성자" />
+            <TableColumn fx:id="currentMember" maxWidth="60.0" prefWidth="60.0" text="현재인원" />
+            <TableColumn fx:id="groupMember" maxWidth="60.0" prefWidth="60.0" text="모집인원" />
+        </columns>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </VBox.margin>
+      </TableView>
+      <Label text="내가 참여한 모임">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" left="10.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <TableView fx:id="JoinTable" maxWidth="380.0" onMouseClicked="#JoinListCliked" prefHeight="190.0">
+        <columns>
+          <TableColumn fx:id="groupNum1" maxWidth="50.0" prefWidth="50.0" text="번호" />
+          <TableColumn fx:id="groupName1" maxWidth="140.0" prefWidth="140.0" text="모임 제목" />
+            <TableColumn fx:id="leaderId1" maxWidth="65.0" prefWidth="65.0" text="작성자" />
+            <TableColumn fx:id="currentMember1" maxWidth="60.0" prefWidth="60.0" text="현재인원" />
+            <TableColumn fx:id="groupMember1" maxWidth="60.0" prefWidth="60.0" text="모집인원" />
+        </columns>
+         <VBox.margin>
+            <Insets bottom="30.0" left="10.0" right="10.0" />
+         </VBox.margin>
+      </TableView>
+      <HBox alignment="CENTER" maxHeight="100.0" maxWidth="400.0" minHeight="100.0" minWidth="400.0" prefHeight="100.0" prefWidth="400.0" spacing="30.0">
+         <children>
+            <Label onMouseClicked="#openMain" text="홈">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label onMouseClicked="#openSearch" text="검색">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label onMouseClicked="#openMyGroupList" text="내 모임">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label onMouseClicked="#openMore" text="더보기">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets top="30.0" />
+   </padding>
+</VBox>

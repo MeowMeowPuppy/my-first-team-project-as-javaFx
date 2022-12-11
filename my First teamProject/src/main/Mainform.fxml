@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="600.0" maxWidth="400.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: WHITE;">
+         <children>
+            <HBox alignment="CENTER" maxHeight="120.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <VBox.margin>
+                  <Insets bottom="30.0" top="30.0" />
+               </VBox.margin>
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="sport" fitHeight="100.0" fitWidth="90.0" onMouseClicked="#openListCategorySport" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/KakaoTalk_20220901_143910122.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="운동">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="art" fitHeight="100.0" fitWidth="90.0" onMouseClicked="#openListCategoryArt" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/KakaoTalk_20220901_143910124.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="예술">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="game" fitHeight="100.0" fitWidth="90.0" onMouseClicked="#openListCategoryGame" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/KakaoTalk_20220901_143910128.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="오락">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="study" fitHeight="100.0" fitWidth="90.0" onMouseClicked="#openListCategoryStudy" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/KakaoTalk_20220901_143910123.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="공부/어학">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="relationship" fitHeight="100.0" fitWidth="90.0" onMouseClicked="#openListCategoryRelationship" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/KakaoTalk_20220901_143910126.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="인맥/사교">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="voluteer" fitHeight="100.0" fitWidth="90.0" onMouseClicked="#openListCategoryVoluteer" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/KakaoTalk_20220901_143910127.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="봉사">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="cook" fitHeight="100.0" fitWidth="90.0" onMouseClicked="#openListCategoryCook" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/KakaoTalk_20220901_143910129.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="요리">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="camp" fitHeight="100.0" fitWidth="90.0" onMouseClicked="#openListCategoryCamp" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/KakaoTalk_20220901_143910121.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="캠핑/차">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="free" fitHeight="100.0" fitWidth="90.0" onMouseClicked="#openListCategoryFree" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/KakaoTalk_20220901_143910130.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="자유주제">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#openCreateGroup" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/icons8-plus-67.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="개설하기">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets right="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="100.0" maxWidth="400.0" minHeight="100.0" minWidth="400.0" prefHeight="100.0" prefWidth="400.0" spacing="30.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label text="홈">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label onMouseClicked="#openSearch" text="검색">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label onMouseClicked="#openMyGroupList" text="내 모임">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label onMouseClicked="#openMore" text="더보기">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</StackPane>
